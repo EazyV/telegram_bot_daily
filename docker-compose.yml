@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    restart: always
+    container_name: bot
+    command: python run_bot.py
+    ports:
+      - 85:85
+    volumes:
+      - ./:/app
