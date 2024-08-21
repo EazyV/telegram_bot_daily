@@ -17,8 +17,7 @@ with open("tokens.json", "r") as read_file:
 token = tokens["tokenTG"]
 
 bot = Bot(token)
-names_list = ["Натали Хуторская", "Рифат", "Серега", "Татьяна", "Настя", "Лера", "Иван",
-              "Соня", "Ирен", "Аня", "Катя", "Валера", "Кирилл", "В-Миллениал", "В-Зумер", "Натаха"]
+names_list = ["Name1", "Name2"]
 
 storage = MemoryStorage()
 dp = Dispatcher(bot=bot, storage=storage)
